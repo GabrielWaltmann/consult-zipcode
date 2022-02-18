@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+:root{
+    --color1: #4ECDC4;
+    --color2: #49ACA9;
+    --color3: #364A55;
+    --color4: #ffffff;
+    --color5: #000000;
+}
+
+/* header */
+header{
+    height: 250px;
+    color: var(--color4);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header a{
+    color: var(--color4);
+}
+
+header h1{
+    font-size: 60px;
+    padding: 10px;
+}
+
+nav{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* main */
+main p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px 0;
+    color: var(--color4);
+}
+
+h3{
+    font-size: 35px;
+}
+
+input{
+    font-size: 30px;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+
+#name{
+    background-image: url(images/user.png);
+}
+
+#email{
+    background-image: url(images/email.png);
+}
+
+#website{
+    background-image: url(images/link.png);
+}
+
+#timeline{
+    background-image: url(images/date.png);
+}
+
+#budget{
+    background-image: url(images/money.png);
+}
+
+#project{
+    background-image: url(images/project.png);
+}
+
+#description{
+    background-image: url(images/project-description.png);
+    text-align: left;
+}
+
+
+#info{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section{
+    width: 45%;
+    margin: 10px;
+
+}
+
+#description{
+    width: 100%;
+}
+
+#description input{
+    height: 500px;
+    background-position: Center;
+    background-size: 20%;
+    text-align: top;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+}
+
