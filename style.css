@@ -32,6 +32,12 @@ header{
 
 header a{
     color: var(--color4);
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: #4ECDC440;
+    border-radius: 10px;
 }
 
 header h1{
@@ -52,9 +58,13 @@ nav{
 }
 
 /* main */
-main p{
+
+main{
     width: 80%;
     margin: 0 auto;
+
+}
+main p{
     text-align: justify;
     font-size: 20px;
     padding: 10px 0;
@@ -66,8 +76,9 @@ h3{
 }
 
 input{
+    padding-left: 80px;
     font-size: 30px;
-    width: 100%;
+    width: 70%;
     height: 70px;
     border-radius: 10px;
     border: none;
@@ -101,39 +112,111 @@ input{
 
 #description{
     background-image: url(images/project-description.png);
-    text-align: left;
+    text-align: center;
+    margin-top: 30px;
+    width: 98%;
 }
 
 
 #info{
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 section{
-    width: 45%;
-    margin: 10px;
-
+    width: 40%;
 }
 
-#description{
+
+#description h3{
+    display: inline;
+}
+
+#description_area{
+    height: 470px;
+    width: 90%;
+    border-radius: 10px;
+    background-image: url(images/project-description.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    border: none;
+    padding: 30px 0 0 80px;
+    font-size: 20px;
+    color: var(--color3);
+}
+
+#submit{
+    padding-top: 20px;
+    width: 100%;
+    text-align: right;
+}
+input[type='submit']{
+    width: 50%;
+    padding: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+input[type='submit']:hover{
+    background-color: #dbdbdb;
+    color: black;
+}
+
+footer{
+    background-color: var(--color3);
+    text-align: center;
+    margin-top: 30px;
     width: 100%;
 }
 
-#description input{
-    height: 500px;
-    background-position: Center;
-    background-size: 20%;
-    text-align: top;
-    vertical-align: top;
-    overflow-wrap: break-word;
+footer a{
+    color: var(--color4);
+    font-weight: bold;
+    font-size: 30px;
 }
 
-button{
-    border-radius: 10px;
-    border: none;
+footer img{
+    width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    input{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    header{
+        height: 300px;
+    }
+
+    #description_area{
+        width: 80%;
+    }
+    
+    section{
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+    input[type='submit']{
+        width: 50%;
+        font-size: 15px;
+    }
+
+    #submit{
+        text-align: center;
+    }
+
+    footer a{
+        font-size: 20px ;
+    }
+}
