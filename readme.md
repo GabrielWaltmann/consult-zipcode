@@ -40,11 +40,16 @@
 - [X] Form 
 - [ ] Buttons 
 
+# Prerequisites
+- Code Editor <a href="https://code.visualstudio.com" >(VS Code)</a>
+- Browser <a href="https://www.google.com/chrome/" >(Google Chrome)</a>
+<br>
+
 <figure><img align="center" src="images/readme/1.png"></img></figure>
 <br>
 <figure><img align="center" src="images/readme/2.png"></img></figure>
 
-  <a href="https://gabrielwaltmann.github.io/contact/" target="_blank"><p align="center"> <img align="center" src="images/readme/button.png"></p> </a>
+<a href="https://gabrielwaltmann.github.io/contact/" target="_blank"><p align="center"> <img align="center" src="images/readme/button.png"></p> </a>
 
 # Author
 
