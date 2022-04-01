@@ -44,11 +44,9 @@
 <br>
 <figure><img align="center" src="images/readme/2.png"></img></figure>
 
-<p align="center">
   <a align="center" href="https://gabrielwaltmann.github.io/contact/" target="_blank">
-    <figure><img align="center" src="images/readme/button.png"></img></figure>
+    <img align="center" src="images/readme/button.png"></img>
   </a>
-</p>
 
 # Author
 
