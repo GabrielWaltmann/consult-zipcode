@@ -8,14 +8,7 @@
 
 <br>
 
-<p align="center"> <!-- Sumário -->
-    <a href="#technologies">Technologies</a>
-    <a href="#Fields">Fields</a>
-    <a href="#features">Features</a>
-    <a href="#author">Author</a>
-</p>
-
-## Technologies Used:
+# Technologies
 
 <table align="center">
   <tr>
@@ -52,18 +45,8 @@
 <figure><img align="center" src="images/readme/2.png"></img></figure>
 
 <p align="center">
-  <a href="https://gabrielwaltmann.github.io/contact/">
-    <button style=
-        "background: #ffff; 
-        color: #4ECDC4;
-        border: none;
-        border-radius: 10px;
-        height: 50px;
-        text-transform: uppercase;
-        width: 100px;
-        cursor: pointer;
-        font-weight: bold;"
-        >Test website</button>
+  <a align="center" href="https://gabrielwaltmann.github.io/contact/" target="_blank">
+    <figure><img align="center" src="images/readme/button.png"></img></figure>
   </a>
 </p>
 
