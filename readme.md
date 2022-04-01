@@ -1,7 +1,3 @@
-<img align="center" src="images/logo.png"></img>
-
-<br>
-
 <h1 align="center" >Contact Form </h1>
 
 <p align="center">Este é um projeto desenvolvido por mim para exercitar o uso de formulários no HTML</p>
@@ -44,7 +40,9 @@
 <br>
 <figure><img align="center" src="images/readme/2.png"></img></figure>
 
-  <a  href="https://gabrielwaltmann.github.io/contact/" target="_blank"><figure align="center"><img align="center" src="images/readme/button.png"></img></figure></a>
+  <h3 align="center"><a  align="center" href="https://gabrielwaltmann.github.io/contact/">
+    Test website
+  </a></h3>
 
 # Author
 
