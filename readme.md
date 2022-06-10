@@ -30,18 +30,20 @@
 - [X] Formulario 
 - [X] Mensagem de erro 
 - [X] Função de buscar CEP 
-- [ ] Abrir o Google Maps 
+- [ ] Abrir no Google Maps 
 - [X] Versão Mobile
 - [X] Limpar entradas
 
-<figure><img align="center" src="images/readme/1.png"></img></figure>
-<br>
-<figure><img align="center" src="images/readme/2.png"></img></figure>
+<figure>
+  <img align="center" src="readme.gif"></img>
+</figure>
 
-  <h3 align="center"><a  align="center" href="https://gabrielwaltmann.github.io/contact/">
-    Test website
-  </a></h3>
+<br>
+
+<h3 align="center">
+  <a  align="center" href="https://gabrielwaltmann.github.io/consult-zipcode/">Test website</a>
+</h3>
 
 # Author
 
-<p> feito por Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
+feito por Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
