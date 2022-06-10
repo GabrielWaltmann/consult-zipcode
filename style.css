@@ -60,6 +60,10 @@ input{
     font-size: 15px;
 }
 
+input::placeholder{
+    color: var(--color1);
+}
+
 #adress{
     grid-column: 1/3;
 }
