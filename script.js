@@ -1,10 +1,14 @@
+/* select input of cep*/
 cep = document.querySelector("#cep")
 
+/* Ativate with click */
 cep.addEventListener("focusout", searchCep =  async() =>{
     const value = cep.value
     const url = `https://viacep.com.br/ws/${value}/json`
 
+    /* Search cep in viacep api */
     const search = await fetch(url).catch(error => {
+        /* if cep is not found */
         if(value != ""){           
                 document.querySelector(".message").style.display = "flex"
 
@@ -12,6 +16,7 @@ cep.addEventListener("focusout", searchCep =  async() =>{
         }
     })
 
+    /* Insert data */
     const  information = await search.json()
 
     let city = document.querySelector("#city").value = information.localidade

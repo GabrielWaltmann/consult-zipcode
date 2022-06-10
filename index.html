@@ -11,14 +11,13 @@
 </head>
 <body>
 
-
-
+    <!-- Inputs area -->
     <section id="infos">
 
-    <h1>consult zip code</h1>
-
+        <h1>consult zip code</h1>
         
         <form>
+
             <input type="text" name="cep" id="cep" placeholder="CEP">
 
             <input type="text" name="city" id="city" placeholder="Cidade">
@@ -28,22 +27,34 @@
             <input type="text" name="district" id="district" placeholder="Bairro">
             
             <input type="text" name="state" id="state" placeholder="Estado">
+
         </form>
+
     </section>
 
+    <!-- Image area -->
     <figure>
+
         <img src="images/City_SVG.svg" alt="">
+        
     </figure>
 
+    <!-- Zip code not found message -->
     <div class="message">
+        
         <ion-icon name="close-outline" onclick="hide()"></ion-icon>
+        
         <p>CEP NÃO ENCONTRADO! Favor digitar um valor válido</p>
+
     </div>
 
+    <!-- program Script -->
     <script src="script.js"></script>
 
+    <!-- icons Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
