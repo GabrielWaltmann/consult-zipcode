@@ -1,49 +1,43 @@
-<h1 align="center" >Consultar CEP</h1>
+<h1 align="center" >Calcular Distancia entre duas cidades</h1>
 
-<p align="center">Este é um projeto desenvolvido para praticar o uso de inputs e integração com a API Viacep</p>
+<h2 >Sobre o projeto</h2>
+<p align="center">Calcular distância é um site desenvolvido para calcular a distância entre duas cidades por meio dos códigos postais informado pelo usuário.</p>
 
-<br>
+<p>O objetivo desse projeto é o uso de campos de entrada no HTML e a o uso de async/aweit no javascript para integração com a API api-distancep</p>
+<hr>
 
-# Technologies
+<h2 >📸 Demostração</h2>
+<img src="./readme/desktopDemo.gif" alt="demo-desktop-web" height="425">
+<img src="./readme/mobileDemo.gif" alt="demo-mobile-web" height="425">
+<hr>
 
-<table align="center">
-  <tr>
-    <td>HTML</td>
-    <td>CSS</td>
-    <td>Javascript</td>
-  </tr>
+### 🛠 Tecnologias
+<p>As seguintes ferramentas foram usadas na construção do projeto:</p>
+- Javascript (Puro)<br>
+- HTML<br>
+- npm<br>
+- CSS<br>
+- Firebase
+<hr>
 
-</table>
+### Recursos
+- [x] Pagina de login
+- [x] Pagina de Tarefas
+- [ ] Botão editar Tarefas
+- [X] Botão remover Tarefas
+- [X] Botão adicionar Tarefas
+- [X] Botão sair da conta
+- [X] Loyalt responsivo para celular
+- [ ] Correção de bugs do CSS
+- [X] read.md
+- [X] deploy no firebase
+<hr>
 
+Para ver o App hospedado no Firebase, clique aqui: <a href="https://to-do-list-gabriel.firebaseapp.com">To do list</a>
 
-# Entradas 
-+ Cep
-+ Cidade
-+ Adress
-+ District
-+ State
-
-<br>
-
-# Features
-- [X] Design
-- [X] Formulario 
-- [X] Mensagem de erro 
-- [X] Função de buscar CEP 
-- [ ] Abrir no Google Maps 
-- [X] Versão Mobile
-- [X] Limpar entradas
-
-<figure>
-  <img align="center" src="readme.gif"></img>
-</figure>
-
-<br>
-
-<h3 align="center">
-  <a  align="center" href="https://gabrielwaltmann.github.io/consult-zipcode/">Test website</a>
-</h3>
-
-# Author
-
-feito por Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
+<h2>Autor</h2>
+<a href="https://www.linkedin.com/in/gabrielwaltmann/">
+<img src="./readme/linkedin.png" alt="linkedin" height="50"></a>
+<a href="https://github.com/gabrielwaltmann">
+<img src="./readme/github.png" alt="github" height="50"></a>
+<hr><br>

@@ -4,56 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultar CEP</title>
+    <title>Calcular distância</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/phone.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Inputs area -->
-    <section id="infos">
-
-        <h1>consult zip code</h1>
-        
-        <form>
-
-            <input type="text" name="cep" id="cep" placeholder="CEP">
-
-            <input type="text" name="city" id="city" placeholder="Cidade">
-
-            <input type="text" name="adress" id="adress" placeholder="Endereço">
-        
-            <input type="text" name="district" id="district" placeholder="Bairro">
-            
-            <input type="text" name="state" id="state" placeholder="Estado">
-
+    <main> 
+        <!-- Title --> 
+        <h1>Calcule a distância entre duas cidades</h1>
+        <!-- Form -->
+        <form onsubmit="return false">
+            <input type="text" name="firstCEP" id="firstCEP" placeholder="Digite o CEP de origem">
+            <input type="text" name="secondCEP" id="secondCEP" placeholder="Digite o CEP de destino">
+            <button class="calc">
+                <span>Calcular</span>
+                <ion-icon id="icon" name="search-outline"></ion-icon>
+            </button>
         </form>
 
-    </section>
-
-    <!-- Image area -->
-    <figure>
-
-        <img src="images/City_SVG.svg" alt="">
-        
-    </figure>
-
-    <!-- Zip code not found message -->
-    <div class="message">
-        
-        <ion-icon name="close-outline" onclick="hide()"></ion-icon>
-        
-        <p>CEP NÃO ENCONTRADO! Favor digitar um valor válido</p>
-
-    </div>
+        <!-- result -->
+        <section class="result"></section>
+    </main>
 
     <!-- program Script -->
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 
     <!-- icons Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" ></script>
 
 </body>
 

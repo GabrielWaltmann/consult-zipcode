@@ -1,41 +1,61 @@
-/* select input of cep*/
-cep = document.querySelector("#cep")
+/* Consts globals */
+const firstCEP = document.querySelector("#firstCEP")
+const secondCEP = document.querySelector("#secondCEP")
+const calc = document.querySelector(".calc")
 
-/* Ativate with click */
-cep.addEventListener("focusout", searchCep =  async() =>{
-    const value = cep.value
-    const url = `https://viacep.com.br/ws/${value}/json`
-
-    /* Search cep in viacep api */
-    const search = await fetch(url).catch(error => {
-        /* if cep is not found */
-        if(value != ""){           
-                document.querySelector(".message").style.display = "flex"
-
-            clearInputs()
-        }
-    })
-
-    /* Insert data */
-    const  information = await search.json()
-
-    let city = document.querySelector("#city").value = information.localidade
-    let adress = document.querySelector("#adress").value = information.logradouro
-    let district = document.querySelector("#district").value = information.bairro
-    let state = document.querySelector("#state").value = information.uf
-
+/* when clicked on button */
+calc.addEventListener("click", (event)=>{
+    let firstValue = firstCEP.value
+    let secondValue = secondCEP.value
+    if(validCEPs(firstValue, secondValue) === true){
+        calcDistance(firstValue, secondValue)
+    }
 })
 
-function hide(){
-    document.querySelector(".message").style.display = "none"
+/* Calculate distance */
+async function  calcDistance(firstCEP, secondCEP){
+    const origin = firstCEP/* '04335-000'; */
+    const destination = secondCEP/* '01311000'; */
+    
+    try{
+        const response = await axios.get(`https://distancep.herokuapp.com/distance/${firstCEP}/${secondCEP}`)
+        showInScreen(response.data)
+
+    }catch{
+        alert("Não foi possivel encontrar os valores. Por favor informe os CEPs no segunte formato: '0000-0000'")
+    }
 }
 
-function clearInputs(){
-    
-    document.querySelector("#cep").value = ""
-    document.querySelector("#city").value = ""
-    document.querySelector("#adress").value = ""
-    document.querySelector("#district").value = ""
-    document.querySelector("#state").value = ""
+/* Check if is valid */
+function validCEPs(firstCEP, secondCEP){
+    if(firstCEP.length >= 8 && secondCEP.length >= 8) return true
+    else return false
+}
 
+/* Show result on screen */
+function showInScreen(data){
+    const result = document.querySelector(".result")
+    const distance = data.distance
+    const firstAdress = data.cepsInfo[0]
+    const secondAdress = data.cepsInfo[1]
+
+    console.log(firstAdress, secondAdress)
+
+    result.innerHTML = `<h3>Distancia: ${distance}km</h3>
+                        <ul>
+                            <li>CEP de origem: ${firstAdress.cep}</li>
+                            <li>Cidade: ${firstAdress.localidade}</li>
+                            <li>Endereço: ${firstAdress.logradouro}</li>
+                            <li>Estado: ${firstAdress.uf}</li>
+                        <ul>
+                        <ul>
+                            <li>CEP de destino: ${secondAdress.cep}</li>
+                            <li>Cidade: ${secondAdress.localidade}</li>
+                            <li>Endereço: ${secondAdress.logradouro}</li>
+                            <li>Estado: ${secondAdress.uf}</li>
+                        <ul>
+                        ` 
+    result.classList.add("animation")
+    firstCEP.value = ""
+    secondCEP.value = ""
 }
